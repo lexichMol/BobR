@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link type="text/css" href="{{ url_for('static', filename='css/user.css') }}" rel="stylesheet"/>
+  <script src = "{{ url_for('static', filename = 'scripts/user.js') }}"></script>
+</head>
+<body>
+
+  <div class="main">
+    <input type="button" value="сгенерировать поле" class="generate" onclick="generateTable({{ data.weight }},
+    {{ data.count_shot }}, {{ data.list_ship_prize }}, {{ data.list_ship_id }}, {{ data.id_table }}, {{ data.list_shot_xy }}
+    , {{ data.list_shot_tf }}, {{ data.list_prize }}, {{ data.list_prize_id }}, {{ data.list_prize_description }})"/>
+    <a href="/user/prizes" class="generate"><button class="generate">посмотреть подарки</button></a>
+  </div>
+
+  <div class="cont">
+    <div class="mainpopup" id="pop_up">
+      <input type="text" placeholder="ваш приз" name="money" id="money" class="money_pop"/>
+      <button class="d_pop" onclick="func()">→</button>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

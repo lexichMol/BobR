@@ -1,0 +1,125 @@
+.body{
+  background-color: black;
+  height: 600px;
+  width: 600px;
+}
+.block{
+  height: 180px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.generate{
+  background-color: lightblue;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  margin:auto;
+  margin-bottom: 7px;
+}
+
+.generate:hover{
+  background-color: #9a9afe;
+  color: white;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  margin:auto;
+  margin-bottom: 7px;
+}
+.generate:active{
+  background-color: lightgreen;
+  color: white;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  margin:auto;
+  margin-bottom: 7px;
+}
+.main{
+  margin: auto;
+  height: 180px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.pole{
+  background-color: palegreen;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  height: 40px;
+  width: 150px;
+  margin-left: 10px;
+  margin:auto;
+}
+table {
+  margin: 1rem auto;
+}
+
+td {
+  padding: 0.5rem;
+}
+table.fixed { table-layout:fixed; width:30px; word-break:break-all;}
+
+
+
+.mainpopup{
+  border-radius: 30px;
+  border: solid grey 1px;
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+  margin:auto;
+  position: absolute;
+  display: none;
+  align-items: center;
+  margin-bottom: 1000px;
+  margin-left: 770px;
+}
+.money_pop{
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 160px;
+  margin-left: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+.d_pop{
+  background-color: palegreen;
+  border-style: solid;
+  border-radius: 10px;
+  height: 18px;
+  width: 64px;
+  margin-top: 10px;
+  margin-left: 120px;
+  margin-bottom: 7px;
+}
+
+.d_pop:hover{
+  background-color: #f7f8aa;
+  border-style: solid;
+  border-radius: 10px;
+  height: 18px;
+  width: 64px;
+  margin-top: 10px;
+  margin-left: 120px;
+  margin-bottom: 7px;
+}
+
+.d_pop:active{
+  background-color: #f8a5a5;
+  border-style: solid;
+  border-radius: 10px;
+  height: 18px;
+  width: 64px;
+  margin-top: 10px;
+  margin-left: 120px;
+  margin-bottom: 7px;
+}

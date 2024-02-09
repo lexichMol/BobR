@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+    <link type="text/css" href="{{ url_for('static', filename='css/admin.css') }}" rel="stylesheet"/>
+  <script src = "{{ url_for('static', filename = 'scripts/admin.js') }}"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="block1">
+      <input type="text" placeholder="Введите размер поля" name="count" id="count" class="pole"/>
+      <input type="text" placeholder="Введите кол-во выстрелов" name="bullet" id="bullet" class="pole"/>
+      <input type="text" placeholder="Введите id-user" name="us_id" id="us_id" class="pole"/>
+    </div>
+    <div class="block">
+      <input type="button" value="Сгенерировать поле" class="generate" onclick="generateTable({{ data.prize }}, {{ data.description }})"/>
+      <input type="button" value="Сохранить" class="generate1" onclick="save()"/>
+    </div>
+  </div>
+
+
+  <div class="mainpopup" id="pop_up">
+    <input type="text" placeholder="id приза" name="money" id="money" class="money_pop"/>
+    <div class="pafos">
+      <button class="d_pop" onclick="removed()">🗑️</button>
+      <button class="d_pop" onclick="back()">→</button>
+    </div>
+  </div>
+
+
+
+  <input type="text" placeholder="Введите приз" name="prize" id="prize" class="pole"/>
+  <input type="text" placeholder="Введите описание приза" name="prize_description" id="prize_description" class="pole"/>
+  <input type="button" value="Добавить" class="generate1" onclick="save_prize()"/>
+
+</body>
+
+</html>
